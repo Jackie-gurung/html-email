@@ -22,6 +22,10 @@
       img{
          border: 0;
       }
+      a{
+         text-decoration: none;
+         color: #e8fafb;
+      }
 
 		@media screen and (max-width: 599.98px) {
          .two-columns .padding,
@@ -51,10 +55,6 @@
             text-align: center !important;
          }
 
-         
-         
-
-
       }
       @media screen and (max-width: 399.98px) {
          img.three-col-img{
@@ -64,9 +64,19 @@
       }
 
       /* Custom Dark Mode Colors */
+      :root{
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+      }
 
       @media (prefers-color-scheme: dark) {
-
+         body,center,table{
+            background: #2d2d2d !important;
+            color: #fff !important;
+         }
+         .dark-mode-transparent{
+            background-color: transparent !important;
+         }
       }
 	</style>
 
@@ -106,15 +116,17 @@
             <table align="center" style="border-spacing: 0; color: #565656; 
             font-family: 'Lato',sans-serif,Arial, Helvetica !important; background-color: #fafdfe;
              margin: 0;padding: 0; width: 100%; max-width: 600px; " role="presentation">
-             <!-- START SOCIAL ICONS -->
+            
+            
+            <!-- START SOCIAL ICONS -->
             <tr>
                <td style="padding: 0;">
-                  <table style="border-spacing:0;" width="100%" role="presentation" > 
+                  <table style="border-spacing:0;background-color: #ebf5fa;" width="100%" role="presentation" > 
                      <tr>
                         <td height="3" style="background-color: #21c6b8" ></td>
                      </tr>
                      <tr>
-                        <td style="background-color: #ebf5fa; text-align:center; padding: 10px 0 8px 0 ;">
+                        <td style=" text-align:center; padding: 10px 0 8px 0 ;">
                         <a href="https://example.com" target="_blank">
                            <img src="https://i.ibb.co/bPLzh61/circle-facebook.png" alt="Facebook" title="Facebook" width="32" border="0">
                         </a>
@@ -242,7 +254,7 @@
                                        </tr>
                                        <tr>
                                           <td style="padding: 10px 10px 20px 10px ;">
-                                          <p style="font-size: 17px; font-weight: bold; line-height: 20px;">Build Responsive Websites</p>
+                                          <p style="font-size: 17px; font-weight: bold; line-height: 25px;">Build Responsive Websites</p>
                                           <p style="font-size: 15px; line-height: 20px; ">Responsive HTML Email Templates that you can build around to master email development.</p>
 
                                           </td>
@@ -279,7 +291,7 @@
                                        </tr>
                                        <tr>
                                           <td style="padding: 10px 10px 20px 10px ;">
-                                          <p style="font-size: 17px; font-weight: bold; line-height: 20px;">Create Customs Design</p>
+                                          <p style="font-size: 17px; font-weight: bold; line-height: 25px;">Create Customs Design</p>
                                           <p style="font-size: 15px; line-height: 20px;">Responsive HTML Email Templates that you can build around to master email development.</p>
 
                                           </td>
@@ -327,7 +339,7 @@
                            <table class="columns" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 200px;display: inline-block;" role="presentation">
                               <tr>
                                  <td class="padding first" style="padding:15px 20px 15px 20px;">
-                                    <table class="content" style="border-spacing:0;text-align:center; " role="presentation">
+                                    <table class="content darkmode-transparent"  style="border-spacing:0;text-align:center; " role="presentation">
                                        <tr>
                                           <td >
                                              <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/j852yw3/teal-circle.png" class="one-third-col-img" alt="logo" width="160" border="0" style="max-width: 160px;"></a>
